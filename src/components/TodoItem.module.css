@@ -1,0 +1,34 @@
+.todoItem
+{
+    background-color: #cdcdcd;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+.tasksActionsContainer
+{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+
+.tasksActionsContainer *
+{
+    margin: 0 0.5rem;
+}
+
+.tasksActionsContainer *:first-child
+{
+    margin-left: 0;
+}
+
+.tasksActionsContainerCheckbox
+{
+    height: 1.5rem;
+    width: 1.5rem;
+}
