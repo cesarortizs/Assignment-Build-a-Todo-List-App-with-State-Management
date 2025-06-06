@@ -8,7 +8,7 @@ export function TodoItem(props)
     return(
         <div className={styles.todoItem}>
             <div className={styles.tasksActionsContainer}>
-                <div>
+                <div className={styles.taskTitleContainer}>
                     <input className={styles.tasksActionsContainerCheckbox} type="checkbox" checked={ props.todo.completed ? true : false} onChange={()=>
                         {
                             props.setTodos((currentState)=> {
@@ -51,7 +51,7 @@ export function TodoItem(props)
                             }}
                         />
                     ) : (
-                        <span className={props.todo.completed && "text-decoration-line-through"}>{props.todo.task}</span>
+                        <span className={props.todo.completed ? "text-decoration-line-through" : undefined}>{props.todo.task}</span>
                     )}
                 </div>
                 <div>
